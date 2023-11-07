@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Sometype+Mono&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Roboto"),
+        url("./fuentes/Roboto-Regular.ttf") format("truetype");
+}
+/* Estilos generales layout */
+html {
+    /* width: 1280px; */
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-image: url("imagen/imagen.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    /* width 1280px / ancho caja contenedora (body) 1280px * 100 = 100% */
+    width: 100%;
+    min-height: 80px;
+    background-color: white;
+    position: relative;
+    font-family: "Black Ops One";
+}
+
+nav {
+    /* width 1280px / ancho caja contenedora (body) 1280px * 100 = 100% */
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    background-color: #006293;
+    font-family: "Sometype Mono";
+}
+
+main {
+    /* width 1000px / ancho caja contenedora (body) 1280px * 100 = 78.125% */
+    width: 78.125%;
+    margin: 10px auto;
+    /* padding 50px / ancho caja contenedora (body) 1280px * 100 = 3.90625% */
+    padding: 20px 3.90625%;
+    border-radius: 4px;
+    background-color: #006293;
+    font-family: "Roboto";
+}
+
+section {
+    /* width 960px / ancho caja contenedora (main) 1000px * 100 = 96% */
+    width: 96%;
+    /* padding 20px / ancho caja contenedora (main) 1000px * 100 = 2% */
+    padding: 20px 2%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    /* width 1280px / ancho caja contenedora (body) 1280px * 100 = 100% */
+    width: 100%;
+    min-height: 80px;
+    line-height: 80px;
+    background-color: #006293;
+    font-family: "Sometype Mono";
+}
+
+/* Estilos elementos header */
+header p {
+    display: block;
+    /* width 1280px / ancho caja contenedora (header) 1280px * 100 = 100% */
+    width: 100%;
+    min-height: 80px;
+    line-height: 80px;
+    margin: 0;
+    text-align: center;
+    color: #006293;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header img {
+    height: 60px;
+    /* Si cambio este width sin cambiar la altura la imagen se va a alargar y si cambio la altura se va a salir del header */
+    width: 120px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Estilos menú nav */
+nav ul {
+    /* width 440px / ancho caja contenedora (nav) 1280px * 100 = 34.375% */
+    width: 34.375%;
+    height: 60px;
+    /* padding 420px / ancho caja contenedora (nav) 1280px * 100 = 32.8125% */
+    padding: 0 32.8125%;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    /* width 200px / ancho caja contenedora (ul) 440px * 100 = 45.45454545% */
+    width: 45.45454545%;
+    /* Altura total caja 60px - padding 10px*2 = 40px */
+    height: 40px;
+    line-height: 40px;
+    /* padding 10px / ancho caja contenedora (ul) 440px * 100 = 2.27272727% */
+    padding: 10px 2.27272727%;
+    float: left;
+}
+
+nav a {
+    /* width 200px / ancho caja contenedora (li) 200px * 100 = 100% */
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #0079b6;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #003f5f;
+}
+
+/* Estilos elementos footer */
+footer p {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+/* Estilos section */
+h2 {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ol p {
+    margin-top: 0;
+}
+
+figure {
+    /* width 500px / ancho caja contenedora (section) 960px * 100 = 52.083333% */
+    width: 52.083333%;
+    margin: 0 auto;
+}
+
+figure img {
+    /* width 500px / ancho caja contenedora (figure) 500px * 100 = 100% */
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* Estilos formulario */
+form {
+    /* width 960px / ancho caja contenedora (section) 960px * 100 = 100% */
+    width: 100%;
+}
+
+label[for="nombre"],
+label[for="interes"] {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"] {
+    /* width 160px / ancho caja contenedora (div class="div_inputs") 960px * 100 = 16.6666666% */
+    width: 16.6666666%;
+    min-width: 160px;
+    /* width 20px / ancho caja contenedora (div class="div_inputs") 960px * 100 = 2.08333333% */
+    padding: 10px 2.08333333%;
+}
+
+select {
+    /* width 200px / ancho caja contenedora (div class="div_inputs") 960px * 100 = 20.833333% */
+    width: 20.833333%;
+    min-width: 200px;
+}
+
+.div_inputs {
+    /* width 960px / ancho caja contenedora (form) 960px * 100 = 100% */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 1024px){
+    nav{
+        height: 120px;
+    }
+    nav ul{
+        height: 120px;
+        width: 100%;
+        padding: 0;
+    }
+    nav li{
+        width: 95.45454545%;
+    }
+    nav a{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 870px){
+    header p {
+        font-size: 1.5rem;
+    }
+    
+    header img{
+        display: none;
+    }
+  }

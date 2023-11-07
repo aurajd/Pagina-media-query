@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto ambiental compras online</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/logotipo.png" alt="logo de la escuela">
+        <p>Impacto ambiental compras online</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="encuesta.html">ENCUESTA</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Encuesta compras online</h2>
+            <!-- Creamos un formulario usando form para encuestar a los visitantes de la página -->
+            <form action="recibir/form.php" method="post">
+                <!-- Metemos los elementos en divs para poder agrupar varios y separarlos del resto -->
+                <div class="div_inputs">
+                    <!-- Usamos label para introducir un texto que acompañe al campo -->
+                    <label for="nombre">Introduce tu nombre:</label>
+                    <!--Un input tipo text para introducir el nombre-->
+                    <input type="text" name="nombre" id="nombre" >
+                </div>
+                <div class="div_inputs">
+                    <p>Indica tu género</p>
+                    <!--Varios input tipo radio con el mismo name, lo que hace que solo uno sea seleccionable-->
+                    <div>
+                        <input type="radio" name="genero" value="masculino" id="masculino" >
+                        <label for="masculino">Masculino</label>
+                    </div>  
+                    <div>
+                        <input type="radio" name="genero" value="femenino" id="femenino">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" value="otro" id="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" value="no" id="no">
+                        <label for="no">Prefiero no decirlo</label>
+                    </div>
+                </div>
+                <div class="div_inputs">
+                    <p>¿Con qué frecuencia compras online?</p>
+                    <!--Varios input tipo radio con el mismo name, lo que hace que solo uno sea seleccionable-->
+                    <div>
+                        <input type="radio" name="frecuencia" value="nunca" id="nunca" >
+                        <label for="nunca">Nunca</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="frecuencia" value="ocasionalmente" id="ocasionalmente">
+                        <label for="ocasionalmente">Ocasionalmente</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="frecuencia" value="frecuentemente" id="frecuentemente">
+                        <label for="frecuentemente">Frecuentemente</label>
+                    </div>
+                </div>
+                <div class="div_inputs">
+                    <p>Tipo de productos que compras en línea (selecciona todas las que apliquen):</p>
+                    <!--Varios input tipo checkbox con un array en el name, lo que hace que puedas seleccionar multiples opciones-->
+                    <div>    
+                        <input type="checkbox" name="tipo[]" value="ropa" id="ropa">
+                        <label for="ropa">Ropa</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tipo[]" value="electronicos" id="electronicos">
+                        <label for="electronicos">Productos electrónicos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tipo[]" value="alimentos" id="alimentos">
+                        <label for="alimentos">Alimentos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tipo[]" value="otros" id="otros">
+                        <label for="otros">Otros</label>
+                    </div>
+                </div>
+                <div class="div_inputs">
+                    <!--Un input tipo checkbox con solo una opción-->
+                    <input type="checkbox" name="acepto" id="acepto">
+                    <label for="acepto">Acepto que se use mi información para una encuesta</label>
+                </div>
+                <div class="div_inputs">
+                    <label for="interes">¿Te ha interesado el tema de la página?</label>
+                    <!--Un select con tres opciones-->
+                    <select name="interes">
+                        <option value="mucho">Me ha interesado mucho</option>
+                        <option value="poco">Me ha interesado poco</option>
+                        <option value="poco">No me ha interesado</option>
+                    </select>
+                </div>    
+                    <!-- Un input tipo submit para enviar el formulario-->
+                    <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>COPYRIGHT © 2023 AURA JANEIRO. TODOS LOS DERECHOS RESERVADOS.</p>
+    </footer>
+</body>
+</html>
